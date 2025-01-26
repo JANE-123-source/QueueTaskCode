@@ -67,6 +67,7 @@ void Queue_display(Queue* q) {
 	return;
 }
 
+// Function to peek first element of Queue
 int Queue_peek(Queue* q) {
 	if (Queue_isEmpty(q)) {
 		printf("Queue is empty, cannot peek. \n");
