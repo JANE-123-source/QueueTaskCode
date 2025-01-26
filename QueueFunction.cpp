@@ -19,7 +19,11 @@ int Queue_isFull(Queue* q) {
 // Function to add an element into the queue
 void Queue_enqueue(Queue* q, int element) {
 
-
+        if (Queue_isFull(q)) {
+		printf("Queue is full, cannot enqueue.\n");
+		return;
+	}
+	
 	if (q->front == -1) {
 
 		q->front = 0;
